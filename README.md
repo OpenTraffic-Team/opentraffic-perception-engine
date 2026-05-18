@@ -1,7 +1,7 @@
 <div align="center">
   <img src="figure/LOGO2x.png" width="70%" style="vertical-align:-7px;" />
 
-[![Paper](https://img.shields.io/badge/Paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/XXXX.XXXXX) [![Hugging Face](https://img.shields.io/badge/Models-fcd022?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/OpenTraffic-Team) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/OpenTraffic-Team/Tir) [![WeChat](https://img.shields.io/badge/WeChat--Group-07C160?style=for-the-badge&logo=wechat&logoColor=white)](https://github.com/OpenTraffic-Team/Tir/issues/1)
+[![Hugging Face](https://img.shields.io/badge/Models-fcd022?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/OpenTraffic-Team) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/OpenTraffic-Team/Tir)
 
 </div>
 
@@ -25,7 +25,6 @@
 ## News!
 
 - **[2026/05/15]** 发布 TIR 初始版本，支持多方向交叉口实时感知。
-- **[2026/05/15]** 支持兰州（217路摄像头）与庆阳（45路摄像头）规模化部署。
 
 ---
 
@@ -243,13 +242,6 @@ dist_linux/
 | `radar_variant` | string | 坐标转换变体，默认 `"default"` |
 | `radar_redis_key` | string | 该摄像头对应的 Redis 写入 key |
 
-### 摄像头窗口预设
-
-| 部署场景 | window 配置 |
-|---|---|
-| 兰州 217 路摄像头 | `[726, 381, 1630, 536]` |
-| 庆阳 45 路摄像头 | `[791, 491, 1141, 666]` |
-
 ### 全局配置字段
 
 | 字段 | 说明 |
@@ -262,7 +254,28 @@ dist_linux/
 | `localRedisConfig.password` | Redis 密码 |
 | `data_processing.upload_interval_sec` | JSON 合并上传间隔（秒） |
 
-单应矩阵标定方法详见 [`docs/homography_mapping.md`](docs/homography_mapping.md)。
+---
+
+## Running the System
+
+### 启动主程序
+
+```bash
+python run.py
+```
+
+按 `q` + 回车退出。
+
+### 调试模式
+
+在 `drivers/config.json` 中设置 `"debugMode": true`，启动后会打印详细的跟踪日志。
+
+### 输出说明
+
+系统运行后会同时产生两类输出：
+
+- **JSON 文件落盘**：每秒合并一次四方向识别结果，写入 `json_out_pipei_*` 目录。
+- **Redis Stream 写入**：实时推送识别快照至 Redis，供下游系统消费。
 
 ---
 
@@ -329,13 +342,6 @@ dist_linux/
 | `coordinate_space` | 精确一致率 | **100%** |
 | `timestamp_ms` | 200ms 内对齐率 | **100%** |
 | `vehicles[].lane` | 与雷达精确一致率 | **100%** |
-
-### 部署规模
-
-| 城市 | 摄像头数量 |
-|---|---|
-| 兰州 | 217 |
-| 庆阳 | 45 |
 
 ---
 
