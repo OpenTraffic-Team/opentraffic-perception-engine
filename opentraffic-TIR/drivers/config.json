@@ -1,0 +1,81 @@
+{
+  "intersection": {
+    "id": "HHL_QHDD",
+    "cameras": [
+      {
+        "id": "HHL_QHDD_S",
+        "rtsp_url": "/data/home_dir/wangpeizhi/v1-TSC/tir-0416-2/tir-0513-git/input/45_0429.mp4",
+        "window": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "radar_variant": "default",
+        "radar_redis_key": "recognition[HHL_QHDD_S]",
+        "H": [
+          [
+            -89.03575448366627,
+            -86.99062420618063,
+            1027.008506443859
+          ],
+          [
+            -54.79168784278197,
+            -53.18419072199227,
+            618.2528507802193
+          ],
+          [
+            -0.08807042884055406,
+            -0.08611913054448667,
+            1.0
+          ]
+        ],
+        "H_inv": [
+          [
+            -0.001905695250336856,
+            0.04681435286596254,
+            -26.985941884026868
+          ],
+          [
+            -0.011004498798410027,
+            -0.045490496743465975,
+            39.42634317017445
+          ],
+          [
+            -0.0011155332665334938,
+            0.00020535810521424971,
+            1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "debugMode": false,
+  "localLogCount": 10000,
+  "localLogPrintLevel": 5,
+  "maxLogLevel": 5,
+  "matchTargetDir": "",
+  "radarJsonlOnly": true,
+  "jsonlOutputDir": "./control_group_fullspeed_jsonl",
+  "jsonlShardSize": 20000,
+  "radarReferenceJsonl": "/data/home_dir/wangpeizhi/v1-TSC/tir-0416-2/tir-0513-git/reference_radar/HHL_QHDD_S/HHL_QHDD_S_shard_00000.jsonl",
+  "laneReferenceMaxTimeDeltaMs": 200,
+  "videoOutputEnabled": false,
+  "videoOutputDir": "./video_out_worldspeed",
+  "videoOutputCodec": "mp4v",
+  "videoOutputExt": ".mp4",
+  "videoOutputFps": 25.0,
+  "matchTimeMaxDeltaMs": 30000000,
+  "matchFallbackMaxDeltaMs": 30000000,
+  "vehicleMatchMaxDist": 10.0,
+  "laneMode": "radar_anytime",
+  "laneRadarAssignMaxDist": 15.0,
+  "localRedisConfig": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "db": 0,
+    "password": "",
+    "socket_connect_timeout": 1,
+    "reconnTime": 5
+  }
+}

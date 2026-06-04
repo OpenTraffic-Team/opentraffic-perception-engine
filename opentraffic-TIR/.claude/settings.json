@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh -v -o ConnectTimeout=10 yangzhou@47.110.91.222)",
+      "Bash(ping -n 4 47.110.91.222)",
+      "Bash(cat /c/Users/DELL/.ssh/config | head -50)",
+      "Read(//c/Users/DELL/.ssh/**)",
+      "Bash(cp /c/Users/DELL/.ssh/config /c/Users/DELL/.ssh/config.bak && echo \"备份完成\")",
+      "Bash(curl -s ifconfig.me)",
+      "Bash(ssh -o ConnectTimeout=10 -o BatchMode=yes yangzhou@47.110.91.222)",
+      "Bash(ssh -o ConnectTimeout=10 yangzhou@47.110.91.222 echo \"连接成功\")",
+      "Bash(ssh -vvv -o ConnectTimeout=10 yangzhou@47.110.91.222)",
+      "Bash(ssh-keygen -lf /c/Users/DELL/.ssh/id_ed25519.pub)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\DELL\\.ssh"
+    ]
+  }
+}

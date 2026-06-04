@@ -1,0 +1,8 @@
+input/*.mp4 filter=lfs diff=lfs merge=lfs -text
+.venv/**/torch/lib/*.so filter=lfs diff=lfs merge=lfs -text
+.venv/**/nvidia/**/*.so* filter=lfs diff=lfs merge=lfs -text
+.venv/**/triton/**/*.so* filter=lfs diff=lfs merge=lfs -text
+.venv/**/polars/*.so filter=lfs diff=lfs merge=lfs -text
+.venv/**/*.whl filter=lfs diff=lfs merge=lfs -text
+.venv/**/*.a filter=lfs diff=lfs merge=lfs -text
+.venv/**/*.bin filter=lfs diff=lfs merge=lfs -text
