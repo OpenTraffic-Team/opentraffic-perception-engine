@@ -66,7 +66,7 @@ Supports multi-stream RTSP input, YOLO11 + DeepSort detection and tracking, homo
 
 ## :clapper: Demo Video
 
-[![Perception Demo](figure/video_cover.png)](videos/perception_raw.mp4)
+[![Perception Demo](figure/video_cover.png)] (videos/perception_raw.mp4)
 
 <br/>
 
