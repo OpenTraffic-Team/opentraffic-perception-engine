@@ -7,7 +7,6 @@
 <div align="center">
   <img src="figure/LOGO2x.png" width="70%" style="vertical-align:-7px;" />
 
-[![Paper](https://img.shields.io/badge/Paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/XXXX.XXXXX)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.13+-green.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20x86__64-orange.svg?style=for-the-badge&logo=linux&logoColor=white)]()
@@ -30,7 +29,6 @@ Supports multi-stream RTSP input, YOLO11 + DeepSort detection and tracking, homo
 
 <br/>
 
-> **Paper:** https://arxiv.org/abs/XXXX.XXXXX  
 > **Project Page:** https://opentraffic-team.github.io/tir  
 > **HuggingFace:** https://huggingface.co/OpenTraffic-Team  
 > **GitHub:** https://github.com/OpenTraffic-Team/Tir
@@ -384,7 +382,6 @@ Merged four-direction snapshot format (`origin_info_state:{intersection_id}`):
 
 - Title: `OpenTraffic Perception System for Perception-Driven TSC`
 - Status: `In preparation / pending release`
-- Placeholder: `https://arxiv.org/abs/XXXX.XXXXX`
 
 <br/>
 
@@ -406,20 +403,6 @@ Merged four-direction snapshot format (`origin_info_state:{intersection_id}`):
 
 <br/>
 
-## :bookmark: Citation
-
-If TIR is useful for your research, please cite:
-
-```bibtex
-@article{tir2026,
-  title   = {TIR: Real-Time Traffic Situation Awareness for Urban Intersections},
-  author  = {OpenTraffic Team},
-  journal = {arXiv preprint},
-  year    = {2026}
-}
-```
-
-<br/>
 
 ## :page_facing_up: License
 
