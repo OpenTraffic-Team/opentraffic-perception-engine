@@ -27,14 +27,6 @@ Supports multi-stream RTSP input, YOLO11 + DeepSort detection and tracking, homo
   <img src="figure/Framework.png" width="90%">
 </div>
 
-<br/>
-
-> **Project Page:** https://opentraffic-team.github.io/tir  
-> **HuggingFace:** https://huggingface.co/OpenTraffic-Team  
-> **GitHub:** https://github.com/OpenTraffic-Team/Tir
-
-<br/>
-
 ## 🌟 Table of Contents
 
 - [:clapper: Demo Video](#clapper-demo-video)
