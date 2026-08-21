@@ -27,13 +27,7 @@
   <img src="figure/Framework.png" width="90%">
 </div>
 
-<br/>
 
-> **项目主页：** https://opentraffic-team.github.io/tir  
-> **Hugging Face：** https://huggingface.co/OpenTraffic-Team  
-> **GitHub：** https://github.com/OpenTraffic-Team/Tir
-
-<br/>
 
 ## 🌟 目录
 
